@@ -1,4 +1,5 @@
 import argparse
+import fnmatch
 import os
 import re
 import shutil
@@ -9,7 +10,7 @@ import tempfile
 DOC_EXTS = {'.md', '.mdx', '.txt', '.rst'}
 CODE_EXTS = {'.py', '.ts', '.js', '.json'}
 TOOL_HINT_RE = re.compile(r'(tool|schema|mcp|server)', re.IGNORECASE)
-SKIP_DIR_NAMES = {'node_modules', 'dist', 'build', '__pycache__', 'venv', '.venv', 'test', 'tests', '.github'}
+SKIP_DIR_NAMES = {'.git', 'node_modules', 'dist', 'build', '__pycache__', 'venv', '.venv', 'test', 'tests', '.github'}
 MAX_FILE_SIZE = 60_000
 
 
@@ -31,10 +32,11 @@ def clone_repo(repo_url, dest):
     return branch
 
 
-def collect_candidates(tmp_dir, max_files):
+def collect_candidates(tmp_dir, max_files, include_globs=None):
+    include_globs = include_globs or []
     candidates = []
     for root, dirs, files in os.walk(tmp_dir):
-        dirs[:] = [d for d in dirs if d not in SKIP_DIR_NAMES and not d.startswith('.')]
+        dirs[:] = [d for d in dirs if d not in SKIP_DIR_NAMES]
         rel_root = os.path.relpath(root, tmp_dir)
         for fname in files:
             fpath = os.path.join(root, fname)
@@ -45,8 +47,9 @@ def collect_candidates(tmp_dir, max_files):
             is_readme_root = rel_root == '.' and fname.lower().startswith('readme')
             is_under_docs = relpath.lower().startswith('docs/')
             is_tool_hint = ext in CODE_EXTS.union(DOC_EXTS) and TOOL_HINT_RE.search(fname)
+            is_explicit_include = any(fnmatch.fnmatch(relpath, pat) for pat in include_globs)
 
-            if not (is_readme_root or is_under_docs or is_tool_hint):
+            if not (is_readme_root or is_under_docs or is_tool_hint or is_explicit_include):
                 continue
             try:
                 size = os.path.getsize(fpath)
@@ -68,6 +71,11 @@ def main():
     parser.add_argument('--repo', required=True, help="GitHub repo URL")
     parser.add_argument('--output', required=True, help="Path to the expert's references/ directory")
     parser.add_argument('--max-files', type=int, default=30, help="Max files to ingest (default 30)")
+    parser.add_argument(
+        '--include-glob', action='append', default=[],
+        help="Extra glob pattern (relative to repo root, e.g. '.agents/skills/*/SKILL.md') to force-include "
+             "regardless of the README/docs/tool-hint heuristic. Repeatable."
+    )
     args = parser.parse_args()
 
     concepts_dir = os.path.join(args.output, 'concepts')
@@ -81,9 +89,9 @@ def main():
             sys.stderr.write(f"Clone failed: {e.stderr}\n")
             sys.exit(1)
 
-        candidates = collect_candidates(tmp_dir, args.max_files)
+        candidates = collect_candidates(tmp_dir, args.max_files, args.include_glob)
         if not candidates:
-            print("No README/docs/tool-hint files found under the size cap.")
+            print("No matching files found (README/docs/tool-hint heuristic + --include-glob) under the size cap.")
             return
 
         repo_url = args.repo[:-4] if args.repo.endswith('.git') else args.repo

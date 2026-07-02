@@ -222,6 +222,14 @@ python "${CLAUDE_PLUGIN_ROOT}/skills/docs-to-expert/scripts/fetch_repo_docs.py" 
 
 Script `git clone --depth 1` repo vào thư mục tạm, lấy: `README*` ở gốc repo, mọi file dưới `docs/`, và các file có tên gợi ý là định nghĩa tool/schema (chứa `tool`/`schema`/`mcp`/`server`, ví dụ `server.py`, `tools.json`) — bỏ qua `node_modules/`, `dist/`, `.git/`, file rỗng hoặc lớn hơn 60KB, tối đa 30 file (`--max-files` để đổi). Ghi mỗi file thành `concepts/repo-<đường-dẫn-đã-làm-phẳng>.md`, có ghi rõ nguồn (`repo_url/blob/<branch>/<path>`) ở đầu file. Xoá thư mục clone tạm sau khi xong.
 
+**Gotcha đã gặp thực tế (ag-kit):** heuristic mặc định (README + `docs/` + tên file gợi ý tool/schema) không phải lúc nào cũng khớp cấu trúc repo — ví dụ repo mà bản thân nó LÀ một bộ template (agent/skill/workflow definitions), nội dung giá trị nằm trong một thư mục có tên riêng (vd `.agents/`) không khớp heuristic. Khi kiểm tra thấy số file ingest được quá ít so với kỳ vọng, `git clone --depth 1` repo vào thư mục tạm để xem cây thư mục thật (`find <tmp> -maxdepth 3`), rồi dùng thêm cờ `--include-glob "<pattern>"` (lặp lại nhiều lần được, khớp theo đường dẫn tương đối gốc repo, hỗ trợ wildcard `*`) để buộc lấy đúng phần đó, ví dụ:
+
+```bash
+python "${CLAUDE_PLUGIN_ROOT}/skills/docs-to-expert/scripts/fetch_repo_docs.py" --repo "<url>" --output "$skillDir\references" --max-files 120 --include-glob ".agents/agent/*.md" --include-glob ".agents/workflows/*.md" --include-glob ".agents/rules/*.md" --include-glob ".agents/skills/*/SKILL.md" --include-glob "AGENT_FLOW.md" --include-glob "CHANGELOG.md"
+```
+
+Nhớ tăng `--max-files` (mặc định 30) nếu số file khớp glob nhiều hơn mức mặc định — nếu không script sẽ dừng sớm khi chạm giới hạn.
+
 **Sau khi chạy:**
 1. Mở `INDEX.md` hiện có của expert, thêm một mục mới `## Nguồn bổ sung: repo <tên_repo> (bên thứ ba, người dùng chỉ định tường minh)` liệt kê các file `repo-*.md` vừa sinh, có 1 dòng ghi rõ đây không phải tài liệu chính thức.
 2. Nếu expert đã có nội dung từ trang docs chính thức trước đó, thêm một dòng vào bảng Gotchas của `SKILL.md` expert đó: phân biệt rõ khi nào dùng file chính thức (`concepts/<slug-docs>.md`) và khi nào dùng file repo (`concepts/repo-*.md`) — không lẫn lộn hai nguồn khi trả lời.
