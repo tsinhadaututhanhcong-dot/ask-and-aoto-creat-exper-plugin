@@ -1,0 +1,15 @@
+{
+  "name": "expert-skills",
+  "description": "Router chuyên gia đa domain: route câu hỏi tới expert skill sẵn có, hoặc tự tạo expert mới từ trang docs chính thức.",
+  "owner": { "name": "Khuc Ngoc Tuyen" },
+  "plugins": [
+    {
+      "name": "expert-skills",
+      "description": "Route domain-specific technical questions to the right bundled expert skill (Claude, Antigravity, MinerU, Document AI, NotebookLM), or create a new one via docs-to-expert after verifying an official documentation source.",
+      "version": "0.1.0",
+      "author": { "name": "Khuc Ngoc Tuyen" },
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
