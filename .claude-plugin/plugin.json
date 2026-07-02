@@ -1,6 +1,6 @@
 {
   "name": "expert-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Điều phối chuyên gia tra cứu tài liệu chuyên môn: route câu hỏi tới expert skill sẵn có (Claude, Antigravity, MinerU, Document AI, NotebookLM), hoặc tự tạo expert mới từ trang docs chính thức qua docs-to-expert khi chưa có ai phù hợp.",
   "author": { "name": "Khuc Ngoc Tuyen" }
 }
