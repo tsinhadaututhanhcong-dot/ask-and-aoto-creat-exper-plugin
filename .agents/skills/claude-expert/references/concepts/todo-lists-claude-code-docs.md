@@ -1,0 +1,180 @@
+---
+title: Todo Lists - Claude Code Docs
+date_created: 2026-06-29
+tags: [concept, auto-generated]
+platform: shared
+---
+
+# Todo Lists - Claude Code Docs
+**Source:** [https://code.claude.com/docs/en/agent-sdk/todo-tracking](https://code.claude.com/docs/en/agent-sdk/todo-tracking)
+
+Todo tracking provides a structured way to manage tasks and display progress to users. The Claude Agent SDK includes built-in todo functionality that helps organize complex workflows and keep users informed about task progression.
+
+As of TypeScript Agent SDK 0.3.142 and Claude Code v2.1.142, sessions use the structured Task tools `TaskCreate`, `TaskUpdate`, `TaskGet`, and `TaskList` instead of `TodoWrite`. See [Migrate to Task tools](#migrate-to-task-tools) for how monitoring code changes. The examples on this page set `CLAUDE_CODE_ENABLE_TASKS=0` to keep showing `TodoWrite` for sessions that have not migrated yet.
+
+### [​](#todo-lifecycle) Todo Lifecycle
+
+Todos follow a predictable lifecycle:
+
+1. **Created** as `pending` when tasks are identified
+2. **Activated** to `in_progress` when work begins
+3. **Completed** when the task finishes successfully
+4. **Removed** when all tasks in a group are completed
+
+### [​](#when-todos-are-used) When Todos Are Used
+
+The SDK automatically creates todos for:
+
+* **Complex multi-step tasks** requiring 3 or more distinct actions
+* **User-provided task lists** when multiple items are mentioned
+* **Non-trivial operations** that benefit from progress tracking
+* **Explicit requests** when users ask for todo organization
+
+## [​](#examples) Examples
+
+### [​](#monitoring-todo-changes) Monitoring Todo Changes
+
+TypeScript
+
+Python
+
+```
+import { query } from "@anthropic-ai/claude-agent-sdk";
+
+for await (const message of query({
+  prompt: "Optimize my React app performance and track progress with todos",
+  // Re-enable TodoWrite, which this example monitors. Without it, the SDK uses
+  // Task tools instead and these tool_use blocks never appear.
+  options: { maxTurns: 15, env: { ...process.env, CLAUDE_CODE_ENABLE_TASKS: "0" } }
+})) {
+  // Todo updates are reflected in the message stream
+  if (message.type === "assistant") {
+    for (const block of message.message.content) {
+      if (block.type === "tool_use" && block.name === "TodoWrite") {
+        const todos = block.input.todos;
+
+        console.log("Todo Status Update:");
+        todos.forEach((todo, index) => {
+          const status =
+            todo.status === "completed" ? "✅" : todo.status === "in_progress" ? "🔧" : "❌";
+          console.log(`${index + 1}. ${status} ${todo.content}`);
+        });
+      }
+    }
+  }
+}
+```
+
+### [​](#real-time-progress-display) Real-time Progress Display
+
+TypeScript
+
+Python
+
+```
+import { query } from "@anthropic-ai/claude-agent-sdk";
+
+class TodoTracker {
+  private todos: any[] = [];
+
+  displayProgress() {
+    if (this.todos.length === 0) return;
+
+    const completed = this.todos.filter((t) => t.status === "completed").length;
+    const inProgress = this.todos.filter((t) => t.status === "in_progress").length;
+    const total = this.todos.length;
+
+    console.log(`\nProgress: ${completed}/${total} completed`);
+    console.log(`Currently working on: ${inProgress} task(s)\n`);
+
+    this.todos.forEach((todo, index) => {
+      const icon =
+        todo.status === "completed" ? "✅" : todo.status === "in_progress" ? "🔧" : "❌";
+      const text = todo.status === "in_progress" ? todo.activeForm : todo.content;
+      console.log(`${index + 1}. ${icon} ${text}`);
+    });
+  }
+
+  async trackQuery(prompt: string) {
+    for await (const message of query({
+      prompt,
+      // Re-enable TodoWrite, which this tracker watches for.
+      options: { maxTurns: 20, env: { ...process.env, CLAUDE_CODE_ENABLE_TASKS: "0" } }
+    })) {
+      if (message.type === "assistant") {
+        for (const block of message.message.content) {
+          if (block.type === "tool_use" && block.name === "TodoWrite") {
+            this.todos = block.input.todos;
+            this.displayProgress();
+          }
+        }
+      }
+    }
+  }
+}
+
+// Usage
+const tracker = new TodoTracker();
+await tracker.trackQuery("Build a complete authentication system with todos");
+```
+
+## [​](#migrate-to-task-tools) Migrate to Task tools
+
+The Task tools split the single `TodoWrite` call into `TaskCreate` for each new item and `TaskUpdate` for each status change, with `TaskList` and `TaskGet` available for the model to read back the current list. Your monitoring code still inspects `tool_use` blocks in the assistant stream, but maintains a map keyed by task ID instead of replacing the whole list on every call. The Task tools are the default as of TypeScript Agent SDK 0.3.142 and Claude Code v2.1.142, so no `options.env` change is needed.
+
+| With `TodoWrite` | With Task tools |
+| --- | --- |
+| One tool call rewrites the full `todos` array | `TaskCreate` adds one item, `TaskUpdate` patches one item by `taskId` |
+| Match `block.name === "TodoWrite"` | Match `block.name === "TaskCreate"` or `"TaskUpdate"` |
+| Item shape: `{ content, status, activeForm }` | `TaskCreate` input: `{ subject, description, activeForm?, metadata? }`. `TaskUpdate` input: `{ taskId, status?, subject?, description?, activeForm?, addBlocks?, addBlockedBy?, owner?, metadata? }`. `status` is `"pending"`, `"in_progress"`, or `"completed"`; set `status: "deleted"` to delete |
+| Render `block.input.todos` directly | Accumulate items across calls, or read a snapshot from a `TaskList` tool result |
+
+The assigned task ID is not in the `TaskCreate` input. It comes back in the matching `tool_result` as `{ task: { id, subject } }`, so capture it from the result block to key your map. The following example shows the minimal change to the [Monitoring Todo Changes](#monitoring-todo-changes) loop. To render a complete list, watch for a `TaskList` tool result in the stream or accumulate `TaskCreate` results and `TaskUpdate` inputs into a map.
+The streamed `tool_use` input is the raw shape the model emitted. Claude Code repairs some close-but-incorrect key names before execution, mapping `id` or `task_id` to `taskId` and `active_form` to `activeForm`, but that repair is not reflected in the stream. Read `TaskUpdate` input fields defensively, as the samples below do, rather than assuming the canonical name is always present.
+
+TypeScript
+
+Python
+
+```
+import { query } from "@anthropic-ai/claude-agent-sdk";
+
+for await (const message of query({
+  prompt: "Optimize my React app performance",
+})) {
+  if (message.type !== "assistant") continue;
+  for (const block of message.message.content) {
+    if (block.type !== "tool_use") continue;
+    if (block.name === "TaskCreate") {
+      const input = block.input as { subject: string };
+      console.log(`+ ${input.subject}`);
+    } else if (block.name === "TaskUpdate") {
+      const input = block.input as {
+        taskId?: string;
+        id?: string;
+        task_id?: string;
+        status?: string;
+      };
+      const taskId = input.taskId ?? input.id ?? input.task_id;
+      if (taskId && input.status) console.log(`  ${taskId} -> ${input.status}`);
+    }
+  }
+}
+```
+
+## [​](#related-documentation) Related Documentation
+
+* [TypeScript SDK Reference](/docs/en/agent-sdk/typescript)
+* [Python SDK Reference](/docs/en/agent-sdk/python)
+* [Streaming vs Single Mode](/docs/en/agent-sdk/streaming-vs-single-mode)
+* [Custom Tools](/docs/en/agent-sdk/custom-tools)
+
+Was this page helpful?
+
+YesNo
+
+[Observability with OpenTelemetry](/docs/en/agent-sdk/observability)[Hosting the Agent SDK](/docs/en/agent-sdk/hosting)
+
+⌘I
+
+---

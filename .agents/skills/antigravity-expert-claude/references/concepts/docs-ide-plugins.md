@@ -1,0 +1,82 @@
+---
+title: IDE Plugins
+date_created: 2026-07-01
+source_url: https://antigravity.google/docs/ide/plugins
+description: Extensibility mechanisms.
+tags: [concept, llms-txt, js-rendered]
+platform: ide
+---
+
+* side\_navigation
+* Antigravity IDE
+>* Customizations
+>* Plugins
+
+# Plugins[link](#plugins)
+
+Plugins are namespaced bundles that allow you to extend Antigravity's capabilities by grouping skills, rules, MCP servers, and hooks into a single package.
+
+## Directory Structure[link](#directory-structure)
+
+If you want to create your own plugins or inspect existing ones, they follow a specific directory structure. A plugin is a directory containing a `plugin.json` file and optional subdirectories for different customization types:
+
+text
+
+content\_copy
+
+```
+            plugins/<plugin-name>/
+├── plugin.json       # Required marker file
+├── mcp_config.json   # Optional MCP server definitions
+├── hooks.json        # Optional hooks definition
+├── skills/           # Optional skills
+│   └── <skill-name>/
+│       └── SKILL.md
+└── rules/            # Optional rules
+    └── <rule-name>.md
+```
+
+### Manifest File (`plugin.json`)[link](#manifest-file-pluginjson)
+
+Every plugin must have a `plugin.json` file at its root. This file identifies the directory as a plugin.
+
+json
+
+content\_copy
+
+```
+            {
+  "name": "my-custom-plugin"
+}
+```
+
+The `name` field is optional and defaults to the directory name if omitted.
+
+## Supported Components[link](#supported-components)
+
+A plugin can contain the following components:
+
+1. **Skills**: Located in the `skills/` subdirectory. Each skill must have a `SKILL.md` file containing instructions for the agent.
+2. **Rules**: Located in the `rules/` subdirectory. These are markdown files that define constraints or guidelines for the agent's behavior.
+3. **MCP Servers**: Configured via `mcp_config.json` at the plugin root. This allows you to connect Antigravity to external tools and services.
+4. **Hooks**: Configured via `hooks.json` at the plugin root. These allow you to run scripts or commands when specific events occur.
+
+## How to Add Plugins[link](#how-to-add-plugins)
+
+There are two ways to add plugins to Antigravity:
+
+### 1. Using Bundled Plugins (Build with Google)[link](#1-using-bundled-plugins-build-with-google)
+
+Antigravity comes with a variety of bundled plugins created by Google. You can browse and add these plugins directly from the user interface:
+
+* Navigate to the **Customizations** page.
+* For more details about the available Google-built plugins, see the [Build with Google Page](/docs/build-with-google).
+
+### 2. Manually Adding Plugins[link](#2-manually-adding-plugins)
+
+You can also add custom plugins by placing your plugin folders in one of the designated plugin locations. Antigravity automatically scans these directories to discover and load your customizations:
+
+* **Workspace Level**: Place your plugin folder inside a `.agents/plugins/` or `_agents/plugins/` directory at the root of your opened workspace. This makes the plugin available only when working in this specific workspace.
+* **Global Level**: Place your plugin folder inside `~/.gemini/config/plugins/` in your user home directory. This makes the plugin active across all workspaces.
+
+On this Page
