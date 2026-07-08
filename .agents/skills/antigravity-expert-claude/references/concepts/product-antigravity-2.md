@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Antigravity 2.0
 date_created: 2026-07-01
 source_url: https://antigravity.google/product/antigravity-2

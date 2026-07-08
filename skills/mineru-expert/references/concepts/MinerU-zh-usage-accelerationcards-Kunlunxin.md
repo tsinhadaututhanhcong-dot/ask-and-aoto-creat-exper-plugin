@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Kunlunxin - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Kunlunxin/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Kunlunxin/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Kunlunxin - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Kunlunxin/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Kunlunxin/)
 

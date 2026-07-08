@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Run tests and report results to Claude via additionalContext
 date_created: 2026-06-29
 tags: [concept, auto-generated]

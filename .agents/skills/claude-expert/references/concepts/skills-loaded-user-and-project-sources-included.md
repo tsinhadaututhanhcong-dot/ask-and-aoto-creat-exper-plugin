@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Skills loaded: user and project sources included
 date_created: 2026-06-29
 tags: [concept, auto-generated]

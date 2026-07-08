@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Document AI client libraries  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/libraries](https://docs.cloud.google.com/document-ai/docs/libraries)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Document AI client libraries  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/libraries](https://docs.cloud.google.com/document-ai/docs/libraries)
 

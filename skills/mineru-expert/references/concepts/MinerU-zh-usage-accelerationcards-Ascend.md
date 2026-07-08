@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Ascend - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Ascend/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Ascend/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Ascend - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Ascend/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Ascend/)
 

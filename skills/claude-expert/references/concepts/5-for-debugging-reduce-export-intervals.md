@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: 5. For debugging: reduce export intervals
 date_created: 2026-06-29
 tags: [concept, auto-generated]

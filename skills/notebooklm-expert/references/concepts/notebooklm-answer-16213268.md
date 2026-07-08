@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Upgrade NotebookLM - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16213268?hl=en&amp;ref_topic=16175214](https://support.google.com/notebooklm/answer/16213268?hl=en&amp;ref_topic=16175214)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Upgrade NotebookLM - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16213268?hl=en&amp;ref_topic=16175214](https://support.google.com/notebooklm/answer/16213268?hl=en&amp;ref_topic=16175214)
 

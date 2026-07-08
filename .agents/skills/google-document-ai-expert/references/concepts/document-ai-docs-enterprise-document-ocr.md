@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Enterprise Document OCR  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/enterprise-document-ocr](https://docs.cloud.google.com/document-ai/docs/enterprise-document-ocr)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Enterprise Document OCR  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/enterprise-document-ocr](https://docs.cloud.google.com/document-ai/docs/enterprise-document-ocr)
 

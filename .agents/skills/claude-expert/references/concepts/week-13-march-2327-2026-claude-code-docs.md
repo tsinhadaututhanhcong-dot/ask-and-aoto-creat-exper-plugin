@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Week 13 · March 23–27, 2026 - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

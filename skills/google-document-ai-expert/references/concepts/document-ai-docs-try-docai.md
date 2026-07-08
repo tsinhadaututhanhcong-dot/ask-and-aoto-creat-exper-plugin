@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Try Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/try-docai](https://docs.cloud.google.com/document-ai/docs/try-docai)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Try Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/try-docai](https://docs.cloud.google.com/document-ai/docs/try-docai)
 

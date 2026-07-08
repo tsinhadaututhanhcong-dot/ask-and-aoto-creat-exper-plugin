@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "desktop-extension/run_server.py (repo source)"
+description: "**Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/desktop-extension/run_server.py"
+timestamp: 2026-07-06T03:34:16Z
+---
 # desktop-extension/run_server.py (repo source)
 **Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/desktop-extension/run_server.py
 

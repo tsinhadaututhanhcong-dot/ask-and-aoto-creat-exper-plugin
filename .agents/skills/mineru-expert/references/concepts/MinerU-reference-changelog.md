@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Changelog - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/reference/changelog/](https://opendatalab.github.io/MinerU/reference/changelog/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Changelog - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/reference/changelog/](https://opendatalab.github.io/MinerU/reference/changelog/)
 

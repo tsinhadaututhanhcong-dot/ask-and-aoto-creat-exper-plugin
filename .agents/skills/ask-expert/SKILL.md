@@ -11,7 +11,6 @@ when_to_use: >
   - Khi người dùng hỏi "ai biết về X", "có chuyên gia nào về X không", "tạo chuyên gia cho X đi".
   - Khi câu trả lời từ một expert đã có tỏ ra thiếu (expert báo WIKI_NOT_FOUND/WIKI_INSUFFICIENT, hoặc độ phủ trong
     registry ghi "Trung bình"/"Mỏng" và câu hỏi cần chi tiết sâu hơn mức đó).
-allowed-tools: view_file, grep_search, find_by_name, read_url_content, search_web, write_to_file
 effort: medium
 ---
 
@@ -19,57 +18,55 @@ effort: medium
 
 ## Vai trò
 
-`ask-expert` không tự biết bất kỳ tri thức chuyên môn nào. Việc duy nhất nó làm là: **tra cứu xem đã có expert skill phù hợp chưa → route sang đúng expert đó**, hoặc nếu chưa có ai phù hợp → **xác minh nguồn tài liệu chính thức → điều phối `docs-to-expert` tạo expert mới → route sang expert vừa tạo**.
+`ask-expert` không tự biết bất kỳ tri thức chuyên môn nào. Việc duy nhất nó làm là: **tra cứu xem đã có expert skill phù hợp chưa rồi route sang đúng expert đó**, hoặc nếu chưa có ai phù hợp thì **xác minh nguồn tài liệu chính thức rồi điều phối `docs-to-expert` tạo expert mới rồi route sang expert vừa tạo**.
 
-## Hai lớp registry
+## Xác định thư mục gốc (Plugin Root)
 
-1. **Registry đóng gói sẵn (tĩnh)** — `.agents/skills/ask-expert/references/expert-registry.md` (đường dẫn tương đối trong workspace). Liệt kê các expert đi kèm kit (claude-expert, antigravity-expert-claude, mineru-expert, google-document-ai-expert, notebooklm-expert). Không tự sửa file này lúc runtime — đây là nội dung do author kit kiểm soát.
-2. **Registry động (workspace)** — `.agents/expert-skills-registry.md` (cùng cấp với `skills/`/`workflows/`/`rules/`, KHÔNG nằm trong `.agents/skills/ask-expert/`). Ghi các expert được `docs-to-expert` tạo thêm SAU khi cài kit — khác Claude Code, Antigravity 2.0 không có sẵn một thư mục "personal skills" toàn cục đã xác nhận, nên expert mới cũng được tạo ngay trong workspace hiện tại tại `.agents/skills/<tên>/`, không phải một vị trí cá nhân dùng chung nhiều project. Nếu file chưa tồn tại, coi như registry rỗng — không có gì phải đọc thêm.
+Tệp SKILL.md này nằm tại `<plugin_root>/skills/ask-expert/SKILL.md`. Để xác định thư mục gốc chứa tất cả chuyên gia, lùi 2 cấp thư mục từ vị trí tệp đang đọc. Ví dụ: nếu tệp đang ở `E:\skills\expert-skills-plugin\.agents\skills\ask-expert\SKILL.md` thì thư mục gốc chuyên gia là `E:\skills\expert-skills-plugin\.agents\skills\`.
+
+Ký hiệu `<skills_root>` trong tài liệu này luôn chỉ đến thư mục gốc đó. Mọi chuyên gia đều nằm trong `<skills_root>/<tên_expert>/`.
+
+## Registry chuyên gia
+
+Tệp `references/expert-registry.md` (nằm cạnh SKILL.md này) liệt kê toàn bộ chuyên gia đã có - kể cả chuyên gia đi kèm lúc cài đặt lẫn chuyên gia tạo thêm sau đó. Đây là nguồn tra cứu nhanh duy nhất. Mỗi khi tạo thêm chuyên gia mới, ghi bổ sung trực tiếp vào tệp này.
 
 ## Gotchas
 
-| CÁCH LÀM SAI | CÁCH LÀM ĐÚNG |
+| Cách làm sai | Cách làm đúng |
 |---|---|
 | Không tìm thấy expert phù hợp rồi tự trả lời bằng kiến thức pretrain. | Báo rõ "chưa có expert cho domain này", đề xuất tạo mới qua `docs-to-expert` (xin xác nhận nếu cần) thay vì bịa câu trả lời. |
 | Tạo expert mới từ một trang không chính thức (blog cá nhân, tutorial bên thứ ba, Stack Overflow, Reddit, bài báo tin tức). | Chỉ tạo expert từ trang có domain thuộc chính nhà cung cấp/tổ chức của công nghệ đó (vd `docs.*`, `developer.*`, domain sản phẩm chính thức, `github.io` của chính tổ chức gốc, `readthedocs.io` chính chủ dự án). Nếu không chắc, hỏi người dùng xác nhận thay vì tự quyết. |
-| Gọi lại `docs-to-expert` tạo một expert đã tồn tại (trùng domain, khác tên một chút). | Luôn đọc CẢ HAI registry (tĩnh + cá nhân) trước, so khớp domain/từ khoá kỹ trước khi kết luận "chưa có expert". |
-| Route sang một expert có độ phủ mỏng rồi coi câu trả lời của nó là đầy đủ, không cảnh báo gì. | Đọc cột "Độ phủ" trong registry tĩnh — nếu "Trung bình" và câu hỏi cần chi tiết sâu (API reference đầy đủ, edge case hiếm), nói rõ giới hạn và đề xuất `docs-to-expert --update` để đào sâu thêm. |
+| Gọi lại `docs-to-expert` tạo một expert đã tồn tại (trùng domain, khác tên một chút). | Luôn đọc registry trước, so khớp domain/từ khoá kỹ trước khi kết luận "chưa có expert". |
+| Route sang một expert có độ phủ mỏng rồi coi câu trả lời của nó là đầy đủ, không cảnh báo gì. | Đọc cột "Độ phủ" trong registry - nếu "Trung bình" và câu hỏi cần chi tiết sâu (API reference đầy đủ, edge case hiếm), nói rõ giới hạn và đề xuất `docs-to-expert --update` để đào sâu thêm. |
 
 ## Cây quyết định
 
-**Bước 0 — Có thật sự cần một expert domain cụ thể không?** Câu hỏi lập trình chung chung, không gắn với một công nghệ/sản phẩm cụ thể nào → không cần route, trả lời bình thường (không dùng skill này).
+**Bước 0 - Có thật sự cần một expert domain cụ thể không?** Câu hỏi lập trình chung chung, không gắn với một công nghệ/sản phẩm cụ thể nào thì không cần route, trả lời bình thường (không dùng skill này).
 
-**Bước 1 — Tra registry tĩnh:** Đọc `.agents/skills/ask-expert/references/expert-registry.md`, so khớp domain/từ khoá câu hỏi với cột "Domain / từ khoá" của từng expert.
+**Bước 1 - Tra registry:** Đọc tệp `references/expert-registry.md`, so khớp domain/từ khoá câu hỏi với cột "Domain / từ khoá" của từng expert.
 
-**Bước 2 — Tra registry động:** Nếu Bước 1 không khớp, kiểm tra `.agents/expert-skills-registry.md` có tồn tại không (dùng `find_by_name` hoặc thử `view_file`). Nếu có, so khớp tương tự. Nếu vẫn không khớp, coi như chưa có expert nào phù hợp.
+**Bước 2 - Đã tìm thấy expert phù hợp:**
+- Xác định đường dẫn thư mục chuyên gia: `<skills_root>/<tên_expert>/`.
+- Đọc tệp `SKILL.md` của chuyên gia đó và làm theo đúng cây quyết định trong đó để trả lời câu hỏi gốc của người dùng.
+- Mỗi expert tự đọc `references/index.md` rồi đọc tiếp các tệp concept tương ứng trong `references/concepts/` - không tự đọc thay nó vì mỗi expert có cây quyết định riêng, đã tối ưu cho domain của nó.
+- Nếu expert trả về tín hiệu WIKI_NOT_FOUND/WIKI_INSUFFICIENT, hoặc độ phủ ghi "Trung bình" và câu hỏi rõ ràng cần sâu hơn, chuyển sang **chế độ cập nhật**: dùng luôn cột "Root URL gốc" đã có sẵn trong registry cho expert này rồi đọc tệp `<skills_root>/docs-to-expert/SKILL.md` và làm theo quy trình cập nhật kèm cờ `--update`.
 
-**Bước 3 — Đã tìm thấy expert phù hợp:**
-- Đọc file `.agents/skills/<tên>/SKILL.md` của đúng expert đó (tên lấy từ cột "Skill" trong registry) và áp dụng đúng theo hướng dẫn trong đó để trả lời câu hỏi gốc của người dùng.
-- Để expert đó tự đọc `INDEX.md`/`concepts/` của chính nó và trả lời (không tự đọc thay nó — mỗi expert có cây quyết định riêng, đã tối ưu cho domain của nó).
-- Nếu expert trả về tín hiệu `WIKI_NOT_FOUND`/`WIKI_INSUFFICIENT`, hoặc độ phủ ghi "Trung bình" và câu hỏi rõ ràng cần sâu hơn → chuyển sang **chế độ cập nhật**: làm theo các bước 3-6 của Bước 4 bên dưới, nhưng bỏ qua bước 1-2 (tìm/xác minh URL mới) — dùng luôn cột "Root URL gốc" đã có sẵn trong registry cho expert này (expert đã tồn tại nghĩa là nguồn đã được xác minh từ trước), và ở bước 4 áp dụng `docs-to-expert` kèm `--update` thay vì tạo mới.
+**Bước 3 - Chưa có expert phù hợp (tạo mới):**
+1. Tìm trang tài liệu liên quan bằng tìm kiếm web, ưu tiên kết quả có domain thuộc chính nhà cung cấp công nghệ đó.
+2. Truy cập URL kết quả để xác minh: đây thật sự là trang tài liệu kỹ thuật chính thức (không phải trang marketing, blog cá nhân, diễn đàn, hay bài tổng hợp bên thứ ba). Kiểm tra domain khớp với sản phẩm/tổ chức đang hỏi.
+3. Luôn hỏi xác nhận người dùng trước khi tạo: nêu rõ URL đã tìm thấy, tên skill dự kiến (kebab-case), và việc này sẽ tốn thời gian cùng cần mạng.
+4. Sau khi được xác nhận: đọc tệp `<skills_root>/docs-to-expert/SKILL.md` và làm theo đúng quy trình trong đó với `<root_url>` + `<skill_name>`. Chuyên gia mới sẽ được tạo tại `<skills_root>/<skill_name>/`.
+5. Sau khi `docs-to-expert` chạy xong: thêm một dòng vào `references/expert-registry.md` ghi tên skill, domain/từ khoá, root URL, số trang, ngày tạo.
+6. Đọc SKILL.md của expert vừa tạo và làm theo để trả lời câu hỏi gốc của người dùng.
 
-**Bước 4 — Chưa có expert phù hợp (tạo mới):**
-1. Tìm trang tài liệu liên quan bằng `search_web`, ưu tiên kết quả có domain thuộc chính nhà cung cấp công nghệ đó.
-2. Dùng `read_url_content` xác minh: đây thật sự là trang tài liệu kỹ thuật chính thức (không phải trang marketing, blog cá nhân, diễn đàn, hay bài tổng hợp bên thứ ba). Kiểm tra domain khớp với sản phẩm/tổ chức đang hỏi.
-3. Đọc rule cấu hình trong `.agents/rules/GEMINI.md` (mục ENFORCEMENT) lấy giá trị `auto_create_expert`:
-   - Mặc định `false` → **luôn hỏi xác nhận người dùng** trước khi tạo: nêu rõ URL đã tìm thấy, tên skill dự kiến (kebab-case), và việc này sẽ tốn thời gian + cần mạng.
-   - `true` → có thể tạo luôn không cần hỏi thêm, NHƯNG bước xác minh domain chính thức ở trên vẫn bắt buộc, không được bỏ qua.
-4. Sau khi được xác nhận (hoặc auto_create_expert bật): đọc file `.agents/skills/docs-to-expert/SKILL.md` và làm theo đúng quy trình trong đó với `<root_url>` + `<skill_name>`.
-5. Sau khi `docs-to-expert` chạy xong: nếu là **tạo mới** (expert mới tại `.agents/skills/<skill_name>/`), thêm một dòng vào `.agents/expert-skills-registry.md` (tạo file mới với header bảng nếu chưa tồn tại) ghi tên skill, domain/từ khoá, root URL, số trang, ngày tạo. Nếu là **cập nhật** một expert đã có sẵn trong registry tĩnh, không cần thêm dòng nào (registry tĩnh do author kit kiểm soát, không tự sửa) — chỉ cần biết số trang mới đã tăng để trả lời chính xác hơn.
-6. Đọc SKILL.md của expert vừa tạo và áp dụng để trả lời câu hỏi gốc của người dùng.
+**Bước 4 - Agent khác hỏi để lấy ngữ cảnh:** Trả về đúng cấu trúc dữ liệu được yêu cầu, kèm tên expert đã dùng làm nguồn (để agent gọi có thể trích dẫn).
 
-**Bước 5 — Agent khác hỏi để lấy ngữ cảnh:** Trả về đúng cấu trúc dữ liệu được yêu cầu, kèm tên expert đã dùng làm nguồn (để agent gọi có thể trích dẫn).
+## Định dạng dòng registry
 
-## Định dạng dòng registry động
-
-Khi thêm expert mới vào `.agents/expert-skills-registry.md`, dùng đúng định dạng bảng markdown giống registry tĩnh để dễ đọc lẫn nhau:
+Khi thêm expert mới vào `references/expert-registry.md`, dùng đúng định dạng bảng markdown đã có sẵn:
 
 ```markdown
-# Expert Registry (cá nhân — tạo bởi ask-expert / docs-to-expert)
-
-| Skill | Domain / từ khoá | Root URL gốc | Số trang | Ngày tạo |
-|---|---|---|---|---|
-| <skill_name> | <mô tả ngắn domain> | <root_url> | <N> | <YYYY-MM-DD> |
+| <skill_name> | <mô tả ngắn domain> | <root_url> | <N> | <Độ phủ> | — |
 ```
 
 ## Triết lý cốt lõi

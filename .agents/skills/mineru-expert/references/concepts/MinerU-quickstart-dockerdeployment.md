@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Docker Deployment - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/quick_start/docker_deployment/](https://opendatalab.github.io/MinerU/quick_start/docker_deployment/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Docker Deployment - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/quick_start/docker_deployment/](https://opendatalab.github.io/MinerU/quick_start/docker_deployment/)
 

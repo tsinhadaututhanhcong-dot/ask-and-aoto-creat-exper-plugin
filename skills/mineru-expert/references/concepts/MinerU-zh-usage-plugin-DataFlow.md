@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "元枢智汇 ADP 智能数据平台 简介 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/DataFlow/](https://opendatalab.github.io/MinerU/zh/usage/plugin/DataFlow/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 元枢智汇 ADP 智能数据平台 简介 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/DataFlow/](https://opendatalab.github.io/MinerU/zh/usage/plugin/DataFlow/)
 

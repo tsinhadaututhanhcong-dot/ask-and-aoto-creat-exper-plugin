@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Cambricon - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Cambricon/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Cambricon/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Cambricon - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Cambricon/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Cambricon/)
 

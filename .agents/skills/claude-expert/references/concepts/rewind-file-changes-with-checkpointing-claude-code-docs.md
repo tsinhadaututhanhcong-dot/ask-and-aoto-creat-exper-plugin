@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Rewind file changes with checkpointing - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: IDE Rules
 date_created: 2026-07-01
 source_url: https://antigravity.google/docs/ide/rules

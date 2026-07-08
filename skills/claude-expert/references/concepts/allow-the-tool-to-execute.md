@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Allow the tool to execute
 date_created: 2026-06-29
 tags: [concept, auto-generated]

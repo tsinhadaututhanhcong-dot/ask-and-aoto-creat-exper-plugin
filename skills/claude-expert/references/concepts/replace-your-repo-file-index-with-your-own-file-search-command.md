@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Replace your-repo-file-index with your own file search command
 date_created: 2026-06-29
 tags: [concept, auto-generated]

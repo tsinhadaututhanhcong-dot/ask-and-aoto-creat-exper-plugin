@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: This pattern lets you customize agents based on runtime conditions
 date_created: 2026-06-29
 tags: [concept, auto-generated]

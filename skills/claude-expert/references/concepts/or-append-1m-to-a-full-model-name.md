@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Or append [1m] to a full model name
 date_created: 2026-06-29
 tags: [concept, auto-generated]

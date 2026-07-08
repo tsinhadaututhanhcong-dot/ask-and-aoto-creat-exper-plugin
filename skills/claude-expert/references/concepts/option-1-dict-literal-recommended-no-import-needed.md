@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Option 1: dict literal (recommended, no import needed)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

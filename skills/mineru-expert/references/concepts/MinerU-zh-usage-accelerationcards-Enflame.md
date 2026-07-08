@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Enflame - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Enflame/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Enflame/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Enflame - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Enflame/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Enflame/)
 

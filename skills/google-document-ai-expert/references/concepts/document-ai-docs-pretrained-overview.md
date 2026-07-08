@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Pretrained overview  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/pretrained-overview](https://docs.cloud.google.com/document-ai/docs/pretrained-overview)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Pretrained overview  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/pretrained-overview](https://docs.cloud.google.com/document-ai/docs/pretrained-overview)
 

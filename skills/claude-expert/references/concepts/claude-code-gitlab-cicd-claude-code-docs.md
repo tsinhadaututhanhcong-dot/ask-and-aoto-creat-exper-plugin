@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Claude Code GitLab CI/CD - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

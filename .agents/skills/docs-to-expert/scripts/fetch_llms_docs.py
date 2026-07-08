@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Mirror a docs site via its llms.txt index: one local file per page, no chunking.
 
 Most modern docs sites (Mintlify-based ones especially) publish an llms.txt
@@ -225,7 +225,7 @@ def write_concept_file(concepts_dir, entry):
 
 def load_previous_index(output_dir):
     """Read back {source_url: description} from a previously generated mirror."""
-    index_path = output_dir / 'INDEX.md'
+    index_path = output_dir / 'index.md'
     if not index_path.exists():
         return {}
     prev = {}
@@ -246,7 +246,7 @@ def load_previous_index(output_dir):
 def main():
     parser = argparse.ArgumentParser(description="Mirror a docs site via its llms.txt index, one file per page.")
     parser.add_argument('--root', required=True, help="Any URL within the target docs site.")
-    parser.add_argument('--output', required=True, help="references/ directory to write INDEX.md + concepts/ into.")
+    parser.add_argument('--output', required=True, help="references/ directory to write index.md + concepts/ into.")
     parser.add_argument('--update', action='store_true', help="Only (re)fetch pages that are new or whose description changed.")
     args = parser.parse_args()
 
@@ -293,7 +293,7 @@ def main():
                 changed += 1
         index_lines.append(f"- [{entry['title']}](concepts/{filename}): {entry['description']}")
 
-    (output_dir / 'INDEX.md').write_text("\n".join(index_lines) + "\n", encoding='utf-8')
+    (output_dir / 'index.md').write_text("\n".join(index_lines) + "\n", encoding='utf-8')
 
     if args.update:
         print(f"Cap nhat xong: {added} moi, {changed} doi, {unchanged} giu nguyen, {failed} loi.")
@@ -303,3 +303,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

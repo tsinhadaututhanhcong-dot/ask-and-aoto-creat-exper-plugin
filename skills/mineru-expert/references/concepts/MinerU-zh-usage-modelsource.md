@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "模型源配置 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/model_source/](https://opendatalab.github.io/MinerU/zh/usage/model_source/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 模型源配置 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/model_source/](https://opendatalab.github.io/MinerU/zh/usage/model_source/)
 

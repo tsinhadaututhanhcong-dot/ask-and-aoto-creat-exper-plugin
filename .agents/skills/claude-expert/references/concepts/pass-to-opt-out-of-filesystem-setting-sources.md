@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Pass [] to opt out of filesystem setting sources.
 date_created: 2026-06-29
 tags: [concept, auto-generated]

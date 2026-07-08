@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Add to deny rules:
 date_created: 2026-06-29
 tags: [concept, auto-generated]

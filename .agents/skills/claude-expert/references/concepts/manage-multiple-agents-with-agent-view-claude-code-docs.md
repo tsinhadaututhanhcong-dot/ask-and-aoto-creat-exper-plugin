@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Manage multiple agents with agent view - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

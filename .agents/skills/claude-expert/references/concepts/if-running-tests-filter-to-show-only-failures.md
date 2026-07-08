@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: If running tests, filter to show only failures
 date_created: 2026-06-29
 tags: [concept, auto-generated]

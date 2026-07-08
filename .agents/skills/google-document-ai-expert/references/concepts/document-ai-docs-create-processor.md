@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Creating and managing processors  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/create-processor](https://docs.cloud.google.com/document-ai/docs/create-processor)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Creating and managing processors  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/create-processor](https://docs.cloud.google.com/document-ai/docs/create-processor)
 

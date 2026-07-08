@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: protect-files.sh
 date_created: 2026-06-29
 tags: [concept, auto-generated]

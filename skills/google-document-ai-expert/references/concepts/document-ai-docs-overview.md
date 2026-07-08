@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Document AI overview  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/overview](https://docs.cloud.google.com/document-ai/docs/overview)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Document AI overview  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/overview](https://docs.cloud.google.com/document-ai/docs/overview)
 

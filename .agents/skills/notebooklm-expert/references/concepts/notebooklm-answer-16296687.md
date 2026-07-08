@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Get started with the NotebookLM mobile app - Android - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16296687?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16296687?hl=en&amp;ref_topic=16164070)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Get started with the NotebookLM mobile app - Android - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16296687?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16296687?hl=en&amp;ref_topic=16164070)
 

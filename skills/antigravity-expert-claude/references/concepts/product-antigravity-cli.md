@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Antigravity CLI
 date_created: 2026-07-01
 source_url: https://antigravity.google/product/antigravity-cli

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Define a tool that fetches an image from a URL and returns it to Claude
 date_created: 2026-06-29
 tags: [concept, auto-generated]

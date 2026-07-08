@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Learn about NotebookLM - Computer - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16164461?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16164461?hl=en&amp;ref_topic=16164070)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Learn about NotebookLM - Computer - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16164461?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16164461?hl=en&amp;ref_topic=16164070)
 

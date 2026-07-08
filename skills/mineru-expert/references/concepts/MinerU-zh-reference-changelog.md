@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "更新日志 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/reference/changelog/](https://opendatalab.github.io/MinerU/zh/reference/changelog/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 更新日志 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/reference/changelog/](https://opendatalab.github.io/MinerU/zh/reference/changelog/)
 

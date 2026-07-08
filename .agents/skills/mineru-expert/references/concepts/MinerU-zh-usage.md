@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "使用指南 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/](https://opendatalab.github.io/MinerU/zh/usage/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 使用指南 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/](https://opendatalab.github.io/MinerU/zh/usage/)
 

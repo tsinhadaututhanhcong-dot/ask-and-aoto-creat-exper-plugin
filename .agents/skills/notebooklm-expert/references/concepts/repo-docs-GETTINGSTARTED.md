@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "docs/GETTING_STARTED.md (repo source)"
+description: "**Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/GETTING_STARTED.md"
+timestamp: 2026-07-06T03:34:16Z
+---
 # docs/GETTING_STARTED.md (repo source)
 **Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/GETTING_STARTED.md
 

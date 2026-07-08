@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Original session is untouched; resuming it continues the JWT thread
 date_created: 2026-06-29
 tags: [concept, auto-generated]

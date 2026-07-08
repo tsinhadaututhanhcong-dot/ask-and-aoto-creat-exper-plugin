@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Switch to Sonnet during session
 date_created: 2026-06-29
 tags: [concept, auto-generated]

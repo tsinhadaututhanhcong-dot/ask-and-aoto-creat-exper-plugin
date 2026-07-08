@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Basic syntax (stdio transport)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

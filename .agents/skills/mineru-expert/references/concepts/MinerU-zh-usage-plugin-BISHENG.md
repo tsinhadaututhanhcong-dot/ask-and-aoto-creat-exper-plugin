@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "BISHENG 简介 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/BISHENG/](https://opendatalab.github.io/MinerU/zh/usage/plugin/BISHENG/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # BISHENG 简介 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/BISHENG/](https://opendatalab.github.io/MinerU/zh/usage/plugin/BISHENG/)
 

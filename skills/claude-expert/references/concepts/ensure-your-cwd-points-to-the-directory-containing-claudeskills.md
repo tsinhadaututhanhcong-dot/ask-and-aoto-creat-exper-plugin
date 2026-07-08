@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Ensure your cwd points to the directory containing .claude/skills/
 date_created: 2026-06-29
 tags: [concept, auto-generated]

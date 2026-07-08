@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Advanced CLI Parameters - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/usage/advanced_cli_parameters/](https://opendatalab.github.io/MinerU/usage/advanced_cli_parameters/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Advanced CLI Parameters - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/usage/advanced_cli_parameters/](https://opendatalab.github.io/MinerU/usage/advanced_cli_parameters/)
 

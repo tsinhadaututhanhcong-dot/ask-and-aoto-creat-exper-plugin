@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Week 18 · April 27 – May 1, 2026 - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

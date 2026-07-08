@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Use Claude Code in VS Code - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

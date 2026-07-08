@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: CLI Getting Started
 date_created: 2026-07-01
 source_url: https://antigravity.google/docs/cli/getting-started

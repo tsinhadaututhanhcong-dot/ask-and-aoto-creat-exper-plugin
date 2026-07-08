@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: In ~/.zshrc or ~/.bashrc
 date_created: 2026-06-29
 tags: [concept, auto-generated]

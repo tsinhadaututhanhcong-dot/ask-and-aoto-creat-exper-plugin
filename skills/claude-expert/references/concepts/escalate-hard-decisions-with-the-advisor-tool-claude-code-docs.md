@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Escalate hard decisions with the advisor tool - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

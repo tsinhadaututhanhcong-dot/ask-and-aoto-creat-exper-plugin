@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Pick bar color based on context usage
 date_created: 2026-06-29
 tags: [concept, auto-generated]

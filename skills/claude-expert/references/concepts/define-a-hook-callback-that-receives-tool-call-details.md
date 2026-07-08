@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Define a hook callback that receives tool call details
 date_created: 2026-06-29
 tags: [concept, auto-generated]

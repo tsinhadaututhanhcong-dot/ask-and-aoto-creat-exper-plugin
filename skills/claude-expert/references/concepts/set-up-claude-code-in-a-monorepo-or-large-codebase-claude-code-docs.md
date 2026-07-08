@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Set up Claude Code in a monorepo or large codebase - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

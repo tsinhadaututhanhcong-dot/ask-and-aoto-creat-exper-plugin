@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Using inference profile ID
 date_created: 2026-06-29
 tags: [concept, auto-generated]

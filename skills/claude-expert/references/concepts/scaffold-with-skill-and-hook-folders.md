@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Scaffold with skill and hook folders
 date_created: 2026-06-29
 tags: [concept, auto-generated]

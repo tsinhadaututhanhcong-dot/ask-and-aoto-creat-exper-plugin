@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Fork: branch from session_id into a new session
 date_created: 2026-06-29
 tags: [concept, auto-generated]

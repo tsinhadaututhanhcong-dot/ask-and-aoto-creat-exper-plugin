@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Enable Microsoft Foundry (LLM gateway tab)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

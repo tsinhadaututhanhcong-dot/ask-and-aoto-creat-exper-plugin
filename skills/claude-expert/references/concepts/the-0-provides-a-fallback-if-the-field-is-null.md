@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: The "// 0" provides a fallback if the field is null
 date_created: 2026-06-29
 tags: [concept, auto-generated]

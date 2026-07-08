@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "docs/MCP_CLI_TEST_PLAN.md (repo source)"
+description: "**Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/MCP_CLI_TEST_PLAN.md"
+timestamp: 2026-07-06T03:34:16Z
+---
 # docs/MCP_CLI_TEST_PLAN.md (repo source)
 **Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/MCP_CLI_TEST_PLAN.md
 

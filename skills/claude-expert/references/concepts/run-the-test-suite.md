@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Run the test suite
 date_created: 2026-06-29
 tags: [concept, auto-generated]

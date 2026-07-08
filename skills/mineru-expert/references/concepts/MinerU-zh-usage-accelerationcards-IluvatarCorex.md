@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "IluvatarCorex - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/IluvatarCorex/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/IluvatarCorex/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # IluvatarCorex - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/IluvatarCorex/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/IluvatarCorex/)
 

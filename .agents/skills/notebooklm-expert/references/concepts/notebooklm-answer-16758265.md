@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Generate an Infographic in NotebookLM - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16758265?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16758265?hl=en&amp;ref_topic=16164070)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Generate an Infographic in NotebookLM - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16758265?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16758265?hl=en&amp;ref_topic=16164070)
 

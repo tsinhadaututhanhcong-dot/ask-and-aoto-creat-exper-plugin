@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Managing processor versions  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/manage-processor-versions](https://docs.cloud.google.com/document-ai/docs/manage-processor-versions)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Managing processor versions  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/manage-processor-versions](https://docs.cloud.google.com/document-ai/docs/manage-processor-versions)
 

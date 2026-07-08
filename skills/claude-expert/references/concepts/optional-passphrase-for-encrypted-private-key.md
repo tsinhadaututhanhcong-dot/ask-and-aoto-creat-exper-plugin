@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Optional: Passphrase for encrypted private key
 date_created: 2026-06-29
 tags: [concept, auto-generated]

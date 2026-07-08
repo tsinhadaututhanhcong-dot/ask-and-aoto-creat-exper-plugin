@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "CLI Tools - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/usage/cli_tools/](https://opendatalab.github.io/MinerU/usage/cli_tools/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # CLI Tools - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/usage/cli_tools/](https://opendatalab.github.io/MinerU/usage/cli_tools/)
 

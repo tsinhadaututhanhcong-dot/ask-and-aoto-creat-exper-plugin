@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Implementation Plan
 date_created: 2026-07-01
 source_url: https://antigravity.google/docs/implementation-plan

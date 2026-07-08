@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Week 16 · April 13–17, 2026 - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

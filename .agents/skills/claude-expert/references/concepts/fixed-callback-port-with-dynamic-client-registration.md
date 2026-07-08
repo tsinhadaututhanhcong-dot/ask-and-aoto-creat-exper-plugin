@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Fixed callback port with dynamic client registration
 date_created: 2026-06-29
 tags: [concept, auto-generated]

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Explicitly specify local scope
 date_created: 2026-06-29
 tags: [concept, auto-generated]

@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Form Parser  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/form-parser](https://docs.cloud.google.com/document-ai/docs/form-parser)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Form Parser  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/form-parser](https://docs.cloud.google.com/document-ai/docs/form-parser)
 

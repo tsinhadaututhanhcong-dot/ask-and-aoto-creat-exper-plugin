@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "钉钉简介 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/DingTalk/](https://opendatalab.github.io/MinerU/zh/usage/plugin/DingTalk/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 钉钉简介 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/DingTalk/](https://opendatalab.github.io/MinerU/zh/usage/plugin/DingTalk/)
 

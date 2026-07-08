@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Output File Format - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/reference/output_files/](https://opendatalab.github.io/MinerU/reference/output_files/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Output File Format - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/reference/output_files/](https://opendatalab.github.io/MinerU/reference/output_files/)
 

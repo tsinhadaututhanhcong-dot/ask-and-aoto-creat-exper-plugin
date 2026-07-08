@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Extract fields with jq, "// 0" provides fallback for null
 date_created: 2026-06-29
 tags: [concept, auto-generated]

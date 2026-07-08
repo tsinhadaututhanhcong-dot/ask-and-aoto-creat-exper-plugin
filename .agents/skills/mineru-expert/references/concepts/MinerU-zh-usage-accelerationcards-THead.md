@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "THead - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/THead/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/THead/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # THead - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/THead/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/THead/)
 

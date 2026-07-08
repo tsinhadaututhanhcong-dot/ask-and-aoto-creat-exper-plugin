@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Events/logs only (no metrics)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

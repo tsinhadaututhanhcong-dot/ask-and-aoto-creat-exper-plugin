@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Azure resource name (replace {resource} with your resource name)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

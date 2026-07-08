@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "常见问题解答 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/faq/](https://opendatalab.github.io/MinerU/zh/faq/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 常见问题解答 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/faq/](https://opendatalab.github.io/MinerU/zh/faq/)
 

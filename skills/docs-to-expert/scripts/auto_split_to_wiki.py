@@ -1,4 +1,4 @@
-import os
+﻿import os
 import re
 import argparse
 from datetime import datetime
@@ -51,15 +51,15 @@ def parse_and_split(input_file, output_dir):
             index_entries.append(f"- [{title}](concepts/{filename})")
             created_count += 1
             
-    # Write INDEX.md
-    index_path = os.path.join(output_dir, 'INDEX.md')
+    # Write index.md
+    index_path = os.path.join(output_dir, 'index.md')
     with open(index_path, 'w', encoding='utf-8') as idxf:
         idxf.write("# Master Index\n\n")
         idxf.write("This index was automatically generated from the monolithic document.\n\n")
         idxf.write("## Concepts\n\n")
         idxf.write("\n".join(index_entries))
         
-    print(f"Success! Created {created_count} concept files and INDEX.md in {output_dir}")
+    print(f"Success! Created {created_count} concept files and index.md in {output_dir}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Split a monolithic markdown file into a Karpathy LLM Wiki structure.')
@@ -68,3 +68,4 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     parse_and_split(args.input, args.output)
+

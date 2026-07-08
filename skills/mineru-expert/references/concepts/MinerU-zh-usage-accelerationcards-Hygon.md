@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Hygon - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Hygon/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Hygon/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Hygon - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Hygon/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Hygon/)
 

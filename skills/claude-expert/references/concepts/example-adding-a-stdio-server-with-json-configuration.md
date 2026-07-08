@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Example: Adding a stdio server with JSON configuration
 date_created: 2026-06-29
 tags: [concept, auto-generated]

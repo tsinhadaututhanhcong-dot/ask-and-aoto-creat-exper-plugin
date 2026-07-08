@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: TypeScript SDK V2 session API (removed) - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

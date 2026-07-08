@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Quick Start - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/quick_start/](https://opendatalab.github.io/MinerU/quick_start/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Quick Start - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/quick_start/](https://opendatalab.github.io/MinerU/quick_start/)
 

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Different endpoints/backends for metrics and logs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

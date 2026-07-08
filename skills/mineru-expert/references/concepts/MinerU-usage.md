@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Usage - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/usage/](https://opendatalab.github.io/MinerU/usage/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Usage - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/usage/](https://opendatalab.github.io/MinerU/usage/)
 

@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "docs/WSL_SETUP.md (repo source)"
+description: "**Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/WSL_SETUP.md"
+timestamp: 2026-07-06T03:34:16Z
+---
 # docs/WSL_SETUP.md (repo source)
 **Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/WSL_SETUP.md
 

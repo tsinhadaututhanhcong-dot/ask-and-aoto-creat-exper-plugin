@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Get details for a specific server
 date_created: 2026-06-29
 tags: [concept, auto-generated]

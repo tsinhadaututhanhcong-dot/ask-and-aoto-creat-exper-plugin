@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Output the status line - ${DIR##*/} extracts just the folder name
 date_created: 2026-06-29
 tags: [concept, auto-generated]

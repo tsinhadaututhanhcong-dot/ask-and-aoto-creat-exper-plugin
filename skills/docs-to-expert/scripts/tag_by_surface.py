@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Detect and tag multiple "surfaces" (platforms/products) within one docs
-mirror, and regroup INDEX.md accordingly.
+mirror, and regroup index.md accordingly.
 
 Generalizes two one-off scripts written by hand this session: reorganize.py
 (claude-expert, ~156 pages, no filename structure, needed manual per-page
@@ -11,19 +11,19 @@ not always recoverable from filenames - so this script only ever proposes;
 a human/agent must confirm before --apply runs.
 
 Usage:
-    python tag_by_surface.py --detect --index <INDEX.md>
+    python tag_by_surface.py --detect --index <index.md>
         Prints a clustering proposal and writes surface_mapping.json next to
-        INDEX.md (review/edit it before applying). Prints TIER1_UNCLEAR when
+        index.md (review/edit it before applying). Prints TIER1_UNCLEAR when
         filename structure doesn't yield a confident grouping - the caller
-        should read INDEX.md's titles/descriptions and classify by hand
+        should read index.md's titles/descriptions and classify by hand
         instead of trusting a low-confidence guess.
 
-    python tag_by_surface.py --apply --index <INDEX.md> --mapping <surface_mapping.json> [--comparison-files a.md,b.md]
+    python tag_by_surface.py --apply --index <index.md> --mapping <surface_mapping.json> [--comparison-files a.md,b.md]
         Tags each concept file's frontmatter with `platform: <surface>` and
-        regenerates INDEX.md grouped by surface. If --comparison-files names
+        regenerates index.md grouped by surface. If --comparison-files names
         pages that authoritatively compare surfaces (e.g. Claude Code's
         feature-availability page), that section is pinned first. Otherwise
-        INDEX.md carries an explicit "no comparison page - silence means
+        index.md carries an explicit "no comparison page - silence means
         unconfirmed" notice, matching what was done by hand for
         antigravity-expert-claude.
 """
@@ -118,7 +118,7 @@ def cmd_detect(args):
     index_path = Path(args.index)
     entries = parse_index(index_path)
     if not entries:
-        print("Khong doc duoc muc nao tu INDEX.md", file=sys.stderr)
+        print("Khong doc duoc muc nao tu index.md", file=sys.stderr)
         sys.exit(1)
 
     result = propose_clusters(entries)
@@ -136,7 +136,7 @@ def cmd_detect(args):
     if not result['confident']:
         print(f"\nTIER1_UNCLEAR: khong tim duoc cau truc ro rang qua ten file "
               f"(do phu {result['coverage']:.0%} < nguong {CONFIDENT_COVERAGE:.0%}, "
-              f"hoac chua du 2 nhom). Doc tieu de + mo ta tung dong trong INDEX.md "
+              f"hoac chua du 2 nhom). Doc tieu de + mo ta tung dong trong index.md "
               f"va tu phan loai thu cong, roi ghi surface_mapping.json.")
         if result['clusters']:
             print("Cac nhom yeu tim duoc (chi de tham khao, khong nen tin mu):")
@@ -229,7 +229,7 @@ def cmd_apply(args):
         out.append("")
 
     index_path.write_text("\n".join(out).rstrip() + "\n", encoding='utf-8')
-    print(f"Da gan nhan {tagged} file, sinh lai INDEX.md voi {len(other_platforms)} nhom "
+    print(f"Da gan nhan {tagged} file, sinh lai index.md voi {len(other_platforms)} nhom "
           f"({'co' if comparison_files else 'khong co'} trang doi chieu chinh thuc).")
 
 
@@ -237,7 +237,7 @@ def main():
     parser = argparse.ArgumentParser(description="Detect and tag multi-surface docs mirrors.")
     parser.add_argument('--detect', action='store_true')
     parser.add_argument('--apply', action='store_true')
-    parser.add_argument('--index', required=True, help="Path to INDEX.md")
+    parser.add_argument('--index', required=True, help="Path to index.md")
     parser.add_argument('--mapping', help="Path to surface_mapping.json (required for --apply)")
     parser.add_argument('--comparison-files', help="Comma-separated concept filenames that are official comparison pages")
     args = parser.parse_args()
@@ -256,3 +256,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

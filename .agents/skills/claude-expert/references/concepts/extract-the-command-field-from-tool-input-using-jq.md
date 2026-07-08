@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Extract the command field from tool_input using jq
 date_created: 2026-06-29
 tags: [concept, auto-generated]

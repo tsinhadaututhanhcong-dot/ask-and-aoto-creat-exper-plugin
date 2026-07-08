@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Biren - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Biren/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Biren/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Biren - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Biren/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Biren/)
 

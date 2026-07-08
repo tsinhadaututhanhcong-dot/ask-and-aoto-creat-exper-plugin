@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Extension Modules - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/quick_start/extension_modules/](https://opendatalab.github.io/MinerU/quick_start/extension_modules/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Extension Modules - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/quick_start/extension_modules/](https://opendatalab.github.io/MinerU/quick_start/extension_modules/)
 

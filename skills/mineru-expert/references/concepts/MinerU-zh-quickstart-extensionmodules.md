@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "扩展模块安装 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/quick_start/extension_modules/](https://opendatalab.github.io/MinerU/zh/quick_start/extension_modules/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 扩展模块安装 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/quick_start/extension_modules/](https://opendatalab.github.io/MinerU/zh/quick_start/extension_modules/)
 

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Within Claude Code, see all MCP servers including plugin ones
 date_created: 2026-06-29
 tags: [concept, auto-generated]

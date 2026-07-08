@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "命令行工具 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/cli_tools/](https://opendatalab.github.io/MinerU/zh/usage/cli_tools/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 命令行工具 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/cli_tools/](https://opendatalab.github.io/MinerU/zh/usage/cli_tools/)
 

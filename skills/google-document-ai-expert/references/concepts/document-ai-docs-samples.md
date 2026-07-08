@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "All Document AI code samples  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/samples](https://docs.cloud.google.com/document-ai/docs/samples)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # All Document AI code samples  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/samples](https://docs.cloud.google.com/document-ai/docs/samples)
 

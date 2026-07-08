@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Skills not loaded: setting_sources excludes user and project
 date_created: 2026-06-29
 tags: [concept, auto-generated]

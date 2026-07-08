@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "快速入门 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/quick_start/](https://opendatalab.github.io/MinerU/zh/quick_start/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 快速入门 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/quick_start/](https://opendatalab.github.io/MinerU/zh/quick_start/)
 

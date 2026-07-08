@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "基础使用 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/quick_usage/](https://opendatalab.github.io/MinerU/zh/usage/quick_usage/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 基础使用 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/quick_usage/](https://opendatalab.github.io/MinerU/zh/usage/quick_usage/)
 

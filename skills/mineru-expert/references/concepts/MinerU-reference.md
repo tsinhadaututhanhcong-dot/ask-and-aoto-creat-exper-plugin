@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Reference - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/reference/](https://opendatalab.github.io/MinerU/reference/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Reference - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/reference/](https://opendatalab.github.io/MinerU/reference/)
 

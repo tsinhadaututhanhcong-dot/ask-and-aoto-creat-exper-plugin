@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: The dict schema has no equivalent, so full JSON Schema is required.
 date_created: 2026-06-29
 tags: [concept, auto-generated]

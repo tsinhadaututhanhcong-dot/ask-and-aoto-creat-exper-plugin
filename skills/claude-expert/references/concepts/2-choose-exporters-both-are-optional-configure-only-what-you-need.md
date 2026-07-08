@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: 2. Choose exporters (both are optional - configure only what you need)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

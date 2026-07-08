@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "How-to Guides  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/how-to](https://docs.cloud.google.com/document-ai/docs/how-to)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # How-to Guides  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/how-to](https://docs.cloud.google.com/document-ai/docs/how-to)
 

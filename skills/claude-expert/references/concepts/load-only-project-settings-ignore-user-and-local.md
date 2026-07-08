@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Load only project settings, ignore user and local
 date_created: 2026-06-29
 tags: [concept, auto-generated]

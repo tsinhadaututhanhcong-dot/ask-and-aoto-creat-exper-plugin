@@ -50,3 +50,9 @@
 - [Sider 简介 - MinerU](concepts/MinerU-zh-usage-plugin-Sider.md): Sider 简介 - MinerU
 - [n8n 简介 - MinerU](concepts/MinerU-zh-usage-plugin-n8n.md): n8n 简介 - MinerU
 - [基础使用 - MinerU](concepts/MinerU-zh-usage-quickusage.md): 基础使用 - MinerU
+
+## Nguồn bổ sung: Q&A nội bộ (KHÔNG phải docs chính thức)
+
+Tài liệu dưới đây do người dùng và trợ lý soạn từ phiên làm việc thực tế + benchmark (2026-07-03, cập nhật 2026-07-04), đối chiếu docs chính thức và dữ liệu độc lập. Là kinh nghiệm vận hành/đo đạc, không phải tài liệu gốc MinerU. Khi câu hỏi thuần về cú pháp/tính năng chính thức, ưu tiên các file `MinerU-*.md` ở trên trước.
+
+- [Q&A: backend, tiếng Việt/Anh, cấu trúc, kiểm chứng R1/R2](concepts/qa-internal-backends-and-structure.md): So sánh hai backend, vì sao tiếng Việt phải dùng hybrid-engine (đặc thù phiên bản), chọn backend cho PDF tiếng Anh, tốc độ, cách MinerU dựng bảng/hình/biểu đồ so với pdfplumber, độ chính xác thực đo trên BCTC scan. CẬP NHẬT 2026-07-04: Q7 - đối chứng mù 9 số dấu phẩy (dấu phẩy nằm ngay trong bản in gốc, không phải lỗi OCR, 9/9 đúng từng chữ số); Q8 - soát 2 con dấu (trang 35 không mất gì; trang 9 MinerU bỏ sót tên/chức danh người ký thứ ba do nằm sát mép con dấu, chỉ mất metadata chữ ký, không mất số liệu).

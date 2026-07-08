@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: How Claude remembers your project - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

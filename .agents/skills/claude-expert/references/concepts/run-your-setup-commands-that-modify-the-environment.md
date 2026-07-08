@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Run your setup commands that modify the environment
 date_created: 2026-06-29
 tags: [concept, auto-generated]

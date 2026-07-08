@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Console debugging (1-second intervals)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

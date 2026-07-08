@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Sample processor output  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/output](https://docs.cloud.google.com/document-ai/docs/output)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Sample processor output  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/output](https://docs.cloud.google.com/document-ai/docs/output)
 

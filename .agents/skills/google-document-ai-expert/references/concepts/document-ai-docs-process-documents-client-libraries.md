@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Quickstart: Process documents by using client libraries  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/process-documents-client-libraries](https://docs.cloud.google.com/document-ai/docs/process-documents-client-libraries)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Quickstart: Process documents by using client libraries  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/process-documents-client-libraries](https://docs.cloud.google.com/document-ai/docs/process-documents-client-libraries)
 

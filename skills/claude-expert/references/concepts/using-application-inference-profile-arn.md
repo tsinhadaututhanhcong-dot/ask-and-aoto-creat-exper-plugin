@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Using application inference profile ARN
 date_created: 2026-06-29
 tags: [concept, auto-generated]

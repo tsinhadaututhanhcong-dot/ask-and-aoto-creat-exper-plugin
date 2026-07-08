@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "MooreThreads - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/MooreThreads/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/MooreThreads/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # MooreThreads - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/MooreThreads/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/MooreThreads/)
 

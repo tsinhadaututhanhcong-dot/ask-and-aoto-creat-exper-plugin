@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Option 2: constructor-style (returns a plain dict)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

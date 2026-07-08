@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Send a processing request  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/send-request](https://docs.cloud.google.com/document-ai/docs/send-request)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Send a processing request  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/send-request](https://docs.cloud.google.com/document-ai/docs/send-request)
 

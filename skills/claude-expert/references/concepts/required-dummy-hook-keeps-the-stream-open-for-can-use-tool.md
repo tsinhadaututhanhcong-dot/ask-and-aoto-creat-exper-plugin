@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Required: dummy hook keeps the stream open for can_use_tool
 date_created: 2026-06-29
 tags: [concept, auto-generated]

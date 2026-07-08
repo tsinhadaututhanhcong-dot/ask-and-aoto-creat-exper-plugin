@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "docs/MULTI_USER_ANALYSIS.md (repo source)"
+description: "**Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/MULTI_USER_ANALYSIS.md"
+timestamp: 2026-07-06T03:34:16Z
+---
 # docs/MULTI_USER_ANALYSIS.md (repo source)
 **Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/docs/MULTI_USER_ANALYSIS.md
 

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Enable Vertex (LLM gateway tab)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

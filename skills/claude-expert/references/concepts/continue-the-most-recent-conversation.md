@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Continue the most recent conversation
 date_created: 2026-06-29
 tags: [concept, auto-generated]

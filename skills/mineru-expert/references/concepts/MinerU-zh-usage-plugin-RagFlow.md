@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "RagFlow - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/RagFlow/](https://opendatalab.github.io/MinerU/zh/usage/plugin/RagFlow/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # RagFlow - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/RagFlow/](https://opendatalab.github.io/MinerU/zh/usage/plugin/RagFlow/)
 

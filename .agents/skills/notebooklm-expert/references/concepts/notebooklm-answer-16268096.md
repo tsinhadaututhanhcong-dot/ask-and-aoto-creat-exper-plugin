@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Join the NotebookLM community - Computer - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16268096?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16268096?hl=en&amp;ref_topic=16164070)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Join the NotebookLM community - Computer - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16268096?hl=en&amp;ref_topic=16164070](https://support.google.com/notebooklm/answer/16268096?hl=en&amp;ref_topic=16164070)
 

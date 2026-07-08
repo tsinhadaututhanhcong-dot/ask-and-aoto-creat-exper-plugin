@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Prompt library - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

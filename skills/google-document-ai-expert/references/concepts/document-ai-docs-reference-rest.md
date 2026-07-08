@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Cloud Document AI API  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/reference/rest](https://docs.cloud.google.com/document-ai/docs/reference/rest)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Cloud Document AI API  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/reference/rest](https://docs.cloud.google.com/document-ai/docs/reference/rest)
 

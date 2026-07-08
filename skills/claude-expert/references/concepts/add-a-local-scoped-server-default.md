@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Add a local-scoped server (default)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

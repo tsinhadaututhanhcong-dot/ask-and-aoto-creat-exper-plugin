@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Fallback for docs sites whose content is rendered client-side by
 JavaScript (observed: antigravity.google - an Angular/React-style single-page
 app where the raw HTTP response is just an empty app shell). fetch_llms_docs.py
@@ -40,7 +40,7 @@ def render_page(page, url, settle_ms=2000):
 def main():
     parser = argparse.ArgumentParser(description="Mirror a JS-rendered docs site with a headless browser.")
     parser.add_argument('--llms-txt', required=True, help="URL (or local file path) to the site's llms.txt.")
-    parser.add_argument('--output', required=True, help="references/ directory to write INDEX.md + concepts/ into.")
+    parser.add_argument('--output', required=True, help="references/ directory to write index.md + concepts/ into.")
     args = parser.parse_args()
 
     if sync_playwright is None:
@@ -94,9 +94,10 @@ def main():
             ok += 1
         browser.close()
 
-    (output_dir / 'INDEX.md').write_text("\n".join(index_lines) + "\n", encoding='utf-8')
+    (output_dir / 'index.md').write_text("\n".join(index_lines) + "\n", encoding='utf-8')
     print(f"Render xong: {ok} trang, {failed} loi.")
 
 
 if __name__ == '__main__':
     main()
+

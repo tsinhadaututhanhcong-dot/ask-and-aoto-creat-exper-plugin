@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Change output language in NotebookLM - Computer - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16261963?hl=en&amp;ref_topic=16225617](https://support.google.com/notebooklm/answer/16261963?hl=en&amp;ref_topic=16225617)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Change output language in NotebookLM - Computer - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16261963?hl=en&amp;ref_topic=16225617](https://support.google.com/notebooklm/answer/16261963?hl=en&amp;ref_topic=16225617)
 

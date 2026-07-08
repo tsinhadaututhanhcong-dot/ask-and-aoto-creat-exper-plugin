@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Later: find all sessions with that tag
 date_created: 2026-06-29
 tags: [concept, auto-generated]

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: When CLOUD_ML_REGION=global, override region for models that don't support global endpoints
 date_created: 2026-06-29
 tags: [concept, auto-generated]

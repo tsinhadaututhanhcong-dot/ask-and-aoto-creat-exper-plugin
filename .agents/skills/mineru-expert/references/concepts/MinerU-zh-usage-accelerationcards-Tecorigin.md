@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Tecorigin - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Tecorigin/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Tecorigin/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Tecorigin - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Tecorigin/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/Tecorigin/)
 

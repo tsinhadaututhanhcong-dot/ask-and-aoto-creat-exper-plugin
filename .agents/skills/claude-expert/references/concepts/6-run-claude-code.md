@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: 6. Run Claude Code
 date_created: 2026-06-29
 tags: [concept, auto-generated]

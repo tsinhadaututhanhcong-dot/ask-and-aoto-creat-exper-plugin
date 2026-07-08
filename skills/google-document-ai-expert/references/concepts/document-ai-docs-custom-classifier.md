@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Create, use, and manage a custom document classifier  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/custom-classifier](https://docs.cloud.google.com/document-ai/docs/custom-classifier)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Create, use, and manage a custom document classifier  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/custom-classifier](https://docs.cloud.google.com/document-ai/docs/custom-classifier)
 

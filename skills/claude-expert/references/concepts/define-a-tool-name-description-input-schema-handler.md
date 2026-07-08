@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Define a tool: name, description, input schema, handler
 date_created: 2026-06-29
 tags: [concept, auto-generated]

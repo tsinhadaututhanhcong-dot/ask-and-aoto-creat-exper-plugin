@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: or the deprecated ANTHROPIC_SMALL_FAST_MODEL set.
 date_created: 2026-06-29
 tags: [concept, auto-generated]

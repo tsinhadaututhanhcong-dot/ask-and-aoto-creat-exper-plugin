@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: when settingSources includes "project"
 date_created: 2026-06-29
 tags: [concept, auto-generated]

@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "FastGPT 简介 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/FastGPT/](https://opendatalab.github.io/MinerU/zh/usage/plugin/FastGPT/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # FastGPT 简介 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/plugin/FastGPT/](https://opendatalab.github.io/MinerU/zh/usage/plugin/FastGPT/)
 

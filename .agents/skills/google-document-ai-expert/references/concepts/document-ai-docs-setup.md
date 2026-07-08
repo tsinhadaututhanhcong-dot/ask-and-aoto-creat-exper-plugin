@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Quickstart: Set up the Document AI API  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/setup](https://docs.cloud.google.com/document-ai/docs/setup)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Quickstart: Set up the Document AI API  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/setup](https://docs.cloud.google.com/document-ai/docs/setup)
 

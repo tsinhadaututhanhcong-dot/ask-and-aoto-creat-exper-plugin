@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "scripts/build_mcpb.py (repo source)"
+description: "**Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/scripts/build_mcpb.py"
+timestamp: 2026-07-06T03:34:16Z
+---
 # scripts/build_mcpb.py (repo source)
 **Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/scripts/build_mcpb.py
 

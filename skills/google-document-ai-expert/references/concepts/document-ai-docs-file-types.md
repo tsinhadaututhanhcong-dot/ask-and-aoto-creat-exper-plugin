@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Supported Files  |  Document AI  |  Google Cloud Documentation"
+description: "**Source:** [https://docs.cloud.google.com/document-ai/docs/file-types](https://docs.cloud.google.com/document-ai/docs/file-types)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Supported Files  |  Document AI  |  Google Cloud Documentation
 **Source:** [https://docs.cloud.google.com/document-ai/docs/file-types](https://docs.cloud.google.com/document-ai/docs/file-types)
 

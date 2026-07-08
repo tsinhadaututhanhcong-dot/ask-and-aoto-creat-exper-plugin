@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Load project settings to include CLAUDE.md files
 date_created: 2026-06-29
 tags: [concept, auto-generated]

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: export ANTHROPIC_BEDROCK_BASE_URL=https://bedrock-runtime.us-east-1.amazonaws.com
 date_created: 2026-06-29
 tags: [concept, auto-generated]

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Testing a bare .mcp.json server (no plugin wrapper yet)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

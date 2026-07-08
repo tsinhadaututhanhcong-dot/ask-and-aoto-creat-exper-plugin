@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Report a problem - Computer - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16179536?hl=en&amp;ref_topic=16179690](https://support.google.com/notebooklm/answer/16179536?hl=en&amp;ref_topic=16179690)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Report a problem - Computer - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16179536?hl=en&amp;ref_topic=16179690](https://support.google.com/notebooklm/answer/16179536?hl=en&amp;ref_topic=16179690)
 

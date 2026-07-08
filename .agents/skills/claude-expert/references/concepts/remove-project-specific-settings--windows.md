@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Remove project-specific settings (Windows PowerShell — run from your project directory)
 date_created: 2026-06-29
 tags: [concept, auto-generated]

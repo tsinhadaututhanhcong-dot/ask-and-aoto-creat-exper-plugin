@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Remove a server
 date_created: 2026-06-29
 tags: [concept, auto-generated]

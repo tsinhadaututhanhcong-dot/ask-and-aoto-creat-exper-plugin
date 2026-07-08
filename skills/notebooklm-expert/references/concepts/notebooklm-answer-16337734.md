@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "Use NotebookLM with a work or school Google account - NotebookLM Help"
+description: "**Source:** [https://support.google.com/notebooklm/answer/16337734?hl=en&amp;ref_topic=16175214](https://support.google.com/notebooklm/answer/16337734?hl=en&amp;ref_topic=16175214)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # Use NotebookLM with a work or school Google account - NotebookLM Help
 **Source:** [https://support.google.com/notebooklm/answer/16337734?hl=en&amp;ref_topic=16175214](https://support.google.com/notebooklm/answer/16337734?hl=en&amp;ref_topic=16175214)
 

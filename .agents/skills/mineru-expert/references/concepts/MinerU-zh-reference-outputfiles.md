@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "输出文件格式 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/reference/output_files/](https://opendatalab.github.io/MinerU/zh/reference/output_files/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 输出文件格式 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/reference/output_files/](https://opendatalab.github.io/MinerU/zh/reference/output_files/)
 

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Do not load user, project, or local settings from disk
 date_created: 2026-06-29
 tags: [concept, auto-generated]

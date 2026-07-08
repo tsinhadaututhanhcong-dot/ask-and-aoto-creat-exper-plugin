@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: export ANTHROPIC_FOUNDRY_BASE_URL=https://{resource}.services.ai.azure.com/anthropic
 date_created: 2026-06-29
 tags: [concept, auto-generated]

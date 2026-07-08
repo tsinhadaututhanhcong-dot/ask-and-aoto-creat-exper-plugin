@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "METAX - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/METAX/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/METAX/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # METAX - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/METAX/](https://opendatalab.github.io/MinerU/zh/usage/acceleration_cards/METAX/)
 

@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Store checkpoint metadata for better tracking
 date_created: 2026-06-29
 tags: [concept, auto-generated]

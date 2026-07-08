@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Let Claude use your computer from the CLI - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

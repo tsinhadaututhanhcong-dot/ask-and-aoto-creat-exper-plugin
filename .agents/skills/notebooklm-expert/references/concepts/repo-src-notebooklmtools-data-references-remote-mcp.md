@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "src/notebooklm_tools/data/references/remote-mcp.md (repo source)"
+description: "**Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/src/notebooklm_tools/data/references/remote-mcp.md"
+timestamp: 2026-07-06T03:34:16Z
+---
 # src/notebooklm_tools/data/references/remote-mcp.md (repo source)
 **Source:** https://github.com/jacob-bd/notebooklm-mcp-cli/blob/main/src/notebooklm_tools/data/references/remote-mcp.md
 

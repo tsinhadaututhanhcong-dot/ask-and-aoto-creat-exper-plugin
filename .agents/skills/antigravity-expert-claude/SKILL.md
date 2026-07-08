@@ -1,4 +1,4 @@
----
+﻿---
 name: antigravity-expert-claude
 description: >
   Chuyên gia tra cứu tài liệu hướng dẫn kỹ thuật liên quan đến Google Antigravity: 4 sản phẩm riêng biệt
@@ -17,19 +17,19 @@ effort: medium
 
 | CÁCH LÀM SAI (Ảo giác) | CÁCH LÀM ĐÚNG (Dựa trên tài liệu) |
 |---|---|
-| Dựa trên trí nhớ hoặc kiến thức pre-train có sẵn (dẫn đến ảo giác). | **BẮT BUỘC** dùng tool `view_file` để đọc tệp `references/INDEX.md` TRƯỚC, sau đó đọc các file concept tương ứng trong thư mục `references/concepts/`. |
+| Dựa trên trí nhớ hoặc kiến thức pre-train có sẵn (dẫn đến ảo giác). | **BẮT BUỘC** dùng tool `view_file` để đọc tệp `references/index.md` TRƯỚC, sau đó đọc các file concept tương ứng trong thư mục `references/concepts/`. |
 | Tìm thấy 1 file khớp từ khóa (ví dụ trong mục "Antigravity 2.0" hoặc "Dùng chung") và kết luận ngay tính năng đó cũng có ở sản phẩm khác (ví dụ CLI) đang được hỏi. | Kiểm tra trường `platform:` trong frontmatter của file đó. Antigravity có 4 sản phẩm khác nhau (2.0/IDE/CLI/SDK) và **không có trang đối chiếu chính thức** nào nói rõ sản phẩm nào có gì (khác Claude Code). Nếu tính năng chỉ tìm thấy ở file thuộc sản phẩm khác với sản phẩm đang hỏi, KHÔNG được suy diễn - phải trả lời rằng tài liệu chỉ xác nhận cho sản phẩm kia, chưa thấy xác nhận cho sản phẩm đang hỏi. |
 
 ## Cây Quyết định (Decision Tree)
 
-0. **Bước 0 - Xác định sản phẩm đang được hỏi (BẮT BUỘC, làm trước mọi bước khác):** phân loại câu hỏi vào một trong `antigravity-2.0` (ứng dụng desktop/command center) · `ide` · `cli` · `sdk` · hoặc "dùng chung/không rõ sản phẩm cụ thể". `references/INDEX.md` đã nhóm sẵn theo đúng 4 mục này cộng mục "Dùng chung" và "Marketing". Chỉ tìm trong đúng mục sản phẩm đã xác định + mục "Dùng chung".
+0. **Bước 0 - Xác định sản phẩm đang được hỏi (BẮT BUỘC, làm trước mọi bước khác):** phân loại câu hỏi vào một trong `antigravity-2.0` (ứng dụng desktop/command center) · `ide` · `cli` · `sdk` · hoặc "dùng chung/không rõ sản phẩm cụ thể". `references/index.md` đã nhóm sẵn theo đúng 4 mục này cộng mục "Dùng chung" và "Marketing". Chỉ tìm trong đúng mục sản phẩm đã xác định + mục "Dùng chung".
    - Nếu câu hỏi có dạng "sản phẩm X có tính năng Y không" hoặc so sánh X với Z: sau khi đọc xong file liên quan, kiểm tra file đó có nằm trong đúng mục sản phẩm X không. Vì không có trang đối chiếu chính thức, quy tắc là **im lặng = chưa xác nhận**: nếu Y chỉ được nhắc ở mục sản phẩm khác (hoặc "Dùng chung" không thực sự đề cập rõ X), trả lời "tài liệu chỉ xác nhận Y cho <sản phẩm khác>, không thấy tài liệu riêng xác nhận Y cho X" thay vì suy luận X cũng có.
 1. **NẾU người dùng hỏi nguyên lý, API, cách cấu hình, hoặc gỡ lỗi:**
-   - **Bước 1:** Đọc file `references/INDEX.md`, tìm trong đúng mục sản phẩm đã xác định ở Bước 0.
+   - **Bước 1:** Đọc file `references/index.md`, tìm trong đúng mục sản phẩm đã xác định ở Bước 0.
    - **Bước 2:** Dùng tool `view_file` để đọc các tệp `.md` cụ thể trong thư mục `references/concepts/` mà INDEX trỏ tới.
    - **Bước 3:** Trích xuất thông tin liên quan trực tiếp đến câu hỏi và trả lời.
 2. **NẾU Agent khác hỏi để lấy ngữ cảnh:**
-   - Đọc `INDEX.md` và các concept file liên quan, sau đó trả về đúng JSON / cấu trúc dữ liệu được yêu cầu.
+   - Đọc `index.md` và các concept file liên quan, sau đó trả về đúng JSON / cấu trúc dữ liệu được yêu cầu.
 
 ## So sánh mở giữa các sản phẩm (không quy về được một mục có sẵn)
 
@@ -52,3 +52,4 @@ Cách làm đúng:
 
 ## Triết lý Cốt lõi
 *Không giả định, không bịa đặt. Tài liệu (docs) trong thư mục references là chân lý duy nhất. Khi không chắc một tính năng có thuộc về sản phẩm đang hỏi hay không, nói rõ sự không chắc chắn đó thay vì suy diễn.*
+

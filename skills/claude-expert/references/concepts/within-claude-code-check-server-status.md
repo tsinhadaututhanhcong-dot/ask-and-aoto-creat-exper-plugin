@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: (within Claude Code) Check server status
 date_created: 2026-06-29
 tags: [concept, auto-generated]

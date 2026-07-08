@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Week 20 · May 11–15, 2026 - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

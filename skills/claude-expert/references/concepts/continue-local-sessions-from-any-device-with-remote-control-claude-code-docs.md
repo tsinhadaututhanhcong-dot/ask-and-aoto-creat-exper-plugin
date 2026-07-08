@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Continue local sessions from any device with Remote Control - Claude Code Docs
 date_created: 2026-06-29
 tags: [concept, auto-generated]

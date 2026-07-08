@@ -1,3 +1,9 @@
+---
+type: Reference
+title: "参考资料 - MinerU"
+description: "**Source:** [https://opendatalab.github.io/MinerU/zh/reference/](https://opendatalab.github.io/MinerU/zh/reference/)"
+timestamp: 2026-07-06T03:34:16Z
+---
 # 参考资料 - MinerU
 **Source:** [https://opendatalab.github.io/MinerU/zh/reference/](https://opendatalab.github.io/MinerU/zh/reference/)
 

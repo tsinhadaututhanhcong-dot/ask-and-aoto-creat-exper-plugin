@@ -1,4 +1,5 @@
 ---
+type: Reference
 title: Turn 3 - Claude: "I'll add a main function to hello.py..." (knows which file!)
 date_created: 2026-06-29
 tags: [concept, auto-generated]
