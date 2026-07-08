@@ -11,6 +11,7 @@ User dùng tiếng Việt → trả lời tiếng Việt; code/định danh/tên
 | Tín hiệu | Kích hoạt |
 |---|---|
 | `/ask-expert <câu hỏi>` | Đọc `.agents/workflows/ask-expert.md`, làm theo đúng quy trình trong đó |
+| `/okf-llm-wiki-expert <câu hỏi>` | Đọc `.agents/workflows/okf-llm-wiki-expert.md`, làm theo đúng quy trình trong đó |
 | Câu hỏi chuyên môn về một domain cụ thể (framework/SDK/API/sản phẩm...), không rõ có expert phù hợp hay chưa | Đọc `.agents/skills/ask-expert/SKILL.md`, áp dụng cây quyết định của nó (tra registry → route hoặc tạo mới) |
 | Claude Code / CLI / Desktop / VS Code / JetBrains / Agent SDK / Bedrock / Vertex AI / Foundry | `.agents/skills/claude-expert/SKILL.md` |
 | Google Antigravity / Antigravity 2.0 / Antigravity IDE / Antigravity CLI / `agy` / Antigravity SDK | `.agents/skills/antigravity-expert-claude/SKILL.md` |
